@@ -1,6 +1,5 @@
-# EDA for Bank Customer Churn Analysis
-# Goal: Identify meaningful predictors of customer churn
-# Dataset: Bank_Customer_Churn.csv (10,000 customers)
+# EDA Goal: Identify meaningful predictors of customer churn
+# Dataset: Bank_Customer_Churn.csv(10k customers)
 
 #1. I first imported the data and made it easier to see.
 import pandas as pd
