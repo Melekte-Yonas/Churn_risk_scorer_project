@@ -40,11 +40,14 @@ When I tested my categories I found:
      - 52.45% of high risk category were churners.
      - 13.42% of medium risk category were churners.
      - 3.0% of low risk category were churners.
+     
 ![Churn rate by risk tier](Visualizations/churn_by_risk_tier.png)
+
 My model's mean churn score matched the actual 20% churn rate, showing that it was well calibrated.
 **My results show that my model is able to predict 2.6x higher than the average churn rate of 20%**
 
 I also found the Top 3 churn indicating columns for my dataset(these graphs are found in the visualizations folder and the source code is in src):
+
 ![Churn rate by # of products](Visualizations/churn_by_products.png)
 ![Churn rate by age](Visualizations/churn_by_age.png)
 ![Churn rate by country](Visualizations/churn_by_country.png)
