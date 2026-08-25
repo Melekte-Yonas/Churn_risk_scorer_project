@@ -13,26 +13,26 @@ Churning at banks and really any company significantly damages a company's profi
 ## Methodology
 - I first split each columns data according to the quartile ranges and found the percentage churn rate of each percentile. If it was a categorical column, I found the churn rate of each category for that column.
 - I then found the gap between the likeliest churning category then the lowest.
-  ex. using just one column,
-  column name = gender
-  Male: 16% churn rate
-  Female: 25% churn rate
-  gap: (25 - 16)/100 = 0.09
+    - ex. using just one column,
+    - column name = gender
+    - Male: 16% churn rate
+    - Female: 25% churn rate
+    - gap: (25 - 16)/100 = 0.09
 - Then, I added all the columns gaps.
-  in this project, the sum = 1.75
+    - in this project, the sum = 1.75
 - then to find the weight of the each column:
-  **weight of gender column: 0.09/1.75 = 0.0514**
+    - **weight of gender column: 0.09/1.75 = 0.0514**
 - I then multiply the weight of the columns with the category of that column's churn rate. I did this for all the columns
-  for Male: 0.16(churn rate) * the weight(0.0514)
-  for female: 0.25(churn rate) * the weight(0.0514)
+    - for Male: 0.16(churn rate) * the weight(0.0514)
+    - for female: 0.25(churn rate) * the weight(0.0514)
 - Since a customer contains every column I added all the scores of that customer's features and calculated a churn score for each customer.
 - Then those scores are split into 3 categories like I mentioned in the overview.
 
 ## Results
 When I tested my categories I found:
-     - 52.45% of high risk category were churners.
-     - 13.42% of medium risk category were churners.
-     - 3.0% of low risk category were churners.
+- 52.45% of high risk category were churners.
+- 13.42% of medium risk category were churners.
+- 3.0% of low risk category were churners.
      
 ![Churn rate by risk tier](Visualizations/churn_by_risk_tier.png)
 
@@ -59,7 +59,7 @@ I also found the Top 3 churn indicating columns for my dataset(these graphs are 
 - File paths are okay, just run it as they are.
 
 ## Future improvements
--Future improvements would be to use machine learning models such as linear/logistic or random forest.
+- Future improvements would be to use machine learning models such as linear/logistic or random forest.
 
 
 
