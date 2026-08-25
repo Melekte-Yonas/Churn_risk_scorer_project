@@ -2,8 +2,8 @@
 
 ## Project Overview
 Dataset is 10,000 rows with 20% churn rate at a bank. This project is a model that scores the likeliness of churning of each customer account based on the features/columns provided by the dataset. Each column has a specific weight associated with it. That weight is calculated by how good of a churning predictor that column is. The weights were calculated in the EDA.py file and explains each columns weight and findings in detail. The scores calculated from the model are out of 100%. The scores were split into 3 categories:
-- Low risk = 0-25% percentile(x <= 12.65%),
-- Medium risk = 25%-75% percentile(12.65% <= x <= 23.79%),
+- Low risk = 0-25% percentile(x <= 12.65%)
+- Medium risk = 25%-75% percentile(12.65% <= x <= 23.79%)
 - High risk = 75%-100% percentile(23.79% <= x)
 **This version of the dataset is found in Data/cleaned folder(the churn score and the three categories)**
 
