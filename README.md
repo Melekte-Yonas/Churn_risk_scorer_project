@@ -36,10 +36,10 @@ When I tested my categories I found:
      
 ![Churn rate by risk tier](Visualizations/churn_by_risk_tier.png)
 
-My model's mean churn score matched the actual 20% churn rate, showing that it was well calibrated.
-**My results show that my model is able to predict 2.6x higher than the average churn rate of 20%**
+- My model's mean churn score matched the actual 20% churn rate, showing that it was well calibrated.
+**My results show that my model is able to predict 2.6x higher than the average churn rate of 20%.**
 
-I also found the Top 3 churn indicating columns for my dataset(these graphs are found in the visualizations folder and the source code is in src):
+- I also found the Top 3 churn indicating columns for my dataset(these graphs are found in the visualizations folder and the source code is in src):
 
 ![Churn rate by # of products](Visualizations/churn_by_products.png)
 ![Churn rate by age](Visualizations/churn_by_age.png)
@@ -54,9 +54,8 @@ I also found the Top 3 churn indicating columns for my dataset(these graphs are 
 
 ## How to Run
 - install python libraries: "pip install pandas numpy matplotlib"
-- import pathlib it's already in python, no need for downloading.
 - Run EDA.py first, then Churn_analysis.py, lastly visuals_scr.py
-- File paths are okay, just run it as they are.
+- File paths work for anyone, just run it as they are.
 
 ## Future improvements
 - Future improvements would be to use machine learning models such as linear/logistic or random forest.
