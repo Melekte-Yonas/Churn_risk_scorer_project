@@ -1,24 +1,17 @@
 # Churn risk scorer
 
 ## Project Overview
-Dataset is 10,000 rows with 20% churn rate at a bank.
-This project is a model that scores the likeliness of churning of each customer account based on the features/columns provided by the dataset.
-Each column has a specific weight associated with it. That weight is calculated by how good of a churning predictor that column is.
-The weights were calculated in the EDA.py file and explains each columns weight and findings in detail. The scores calculated from the model are out
-of 100%. The scores were split into 3 categories: - Low risk = 0-25% percentile(x <= 12.65%),
-                                                  - Medium risk = 25%-75% percentile(12.65% <= x <= 23.79%),
-                                                  - High risk = 75%-100% percentile(23.79% <= x)
+Dataset is 10,000 rows with 20% churn rate at a bank. This project is a model that scores the likeliness of churning of each customer account based on the features/columns provided by the dataset. Each column has a specific weight associated with it. That weight is calculated by how good of a churning predictor that column is. The weights were calculated in the EDA.py file and explains each columns weight and findings in detail. The scores calculated from the model are out of 100%. The scores were split into 3 categories:
+- Low risk = 0-25% percentile(x <= 12.65%),
+- Medium risk = 25%-75% percentile(12.65% <= x <= 23.79%),
+- High risk = 75%-100% percentile(23.79% <= x)
 **This version of the dataset is found in Data/cleaned folder(the churn score and the three categories)**
 
 ## Motivation
-Churning at banks and really any company significantly damages a company's profit. It is 5-7x more expensive to acquire customers than retaining one. 
-This is a huge incentive to maintain customers. This project is also useful in seeing what makes customers churn. You can see the reasons from
-which customer features cause churning and make business adjustments to that and improve your company to retain more customers and in turn
-increase profit.
+Churning at banks and really any company significantly damages a company's profit. It is 5-7x more expensive to acquire customers than retaining one. This is a huge incentive to maintain customers. This project is also useful in seeing what makes customers churn. You can see the reasons from which customer features cause churning and make business adjustments to that and improve your company to retain more customers and in turn increase profit.
 
 ## Methodology
-- I first split each columns data according to the quartile ranges and found the percentage churn rate of each percentile. If it was a categorical
-column, I found the churn rate of each category for that column.
+- I first split each columns data according to the quartile ranges and found the percentage churn rate of each percentile. If it was a categorical column, I found the churn rate of each category for that column.
 - I then found the gap between the likeliest churning category then the lowest.
   ex. using just one column,
   column name = gender
@@ -53,11 +46,11 @@ I also found the Top 3 churn indicating columns for my dataset(these graphs are 
 ![Churn rate by country](Visualizations/churn_by_country.png)
 
 ## Technical skills used:
-Python: programming language used
-Pandas: For EDA and data cleaning
-numpy: For array used to visualize
-matplotlib: For bar charts
-pathlib: for file managment
+- Python: programming language used
+- Pandas: For EDA and data cleaning
+- numpy: For array used to visualize
+- matplotlib: For bar charts
+- pathlib: for file managment
 
 ## How to Run
 - install python libraries: "pip install pandas numpy matplotlib"
