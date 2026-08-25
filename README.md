@@ -45,6 +45,8 @@ When I tested my categories I found:
 ![Churn rate by age](Visualizations/churn_by_age.png)
 ![Churn rate by country](Visualizations/churn_by_country.png)
 
+- **This graph shows that customers who have four products, are between the ages of 44 and 92, and are from Germany have the highest likelihood of churning. These findings can help the bank and other companies identify high-risk customer groups, investigate the reasons behind their churn, and develop targeted strategies to improve customer retention.**
+
 ## Technical skills used:
 - Python: programming language used
 - Pandas: For EDA and data cleaning
