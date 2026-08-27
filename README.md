@@ -50,9 +50,9 @@ When I tested my categories I found:
 ## Technical skills used:
 - Python: programming language used
 - Pandas: For EDA and data cleaning
-- numpy: For array used to visualize
+- numpy: For numerical arrays used for visualizations
 - matplotlib: For bar charts
-- pathlib: for file managment
+- pathlib: for file management
 
 ## How to Run
 - install python libraries: "pip install pandas numpy matplotlib"
